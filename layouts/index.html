@@ -11,6 +11,22 @@
             color: white;
             height: 200vh; /* Make page scrollable to see effect */
         }
+        .site-header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 1em;
+            z-index: 10;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-left: 1em;
+        }
+        .social-icons svg {
+            width: 3em;
+            height: 3em;
+            fill: white;
+        }
         .background-wrapper {
             position: fixed;
             top: 0;
@@ -47,6 +63,9 @@
     </style>
 </head>
 <body>
+    <header class="site-header">
+        {{ partial "social-icons.html" . }}
+    </header>
     <div class="background-wrapper"></div>
     <div class="centered-content">
         {{ .Content }}
