@@ -19,3 +19,9 @@ This will start a local server, and you can view the site at `http://localhost:1
 ## Deployment
 
 The website is automatically deployed to GitHub Pages whenever a change is pushed to the `main` branch. The deployment process is managed by the GitHub Actions workflow defined in `.github/workflows/deploy.yml`.
+
+## Licencing
+This repository uses a split Licence
+
+* **Code and Scripts:** Licenced under the [MIT License](LICENSE-CODE.md).
+* **Images and creative Work:** Licenced under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)](LICENSE-CONTENT.md).
