@@ -9,7 +9,6 @@
             margin: 0;
             font-family: sans-serif;
             color: white;
-            height: 200vh; /* Make page scrollable to see effect */
         }
         .site-header {
             position: fixed;
@@ -42,23 +41,27 @@
             transform: scale(1.1);
             transition: filter 0.2s linear;
         }
-        .centered-content {
+        .hero-content {
             display: flex;
-            flex-direction: column; /* This is the fix */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
         }
-        /* Target the paragraph and heading inside the content */
-        .centered-content p {
-            font-size: 2rem; /* Adjusted for subtitles */
+        .hero-content p {
+            font-size: 2rem;
             margin: 0;
         }
-        .centered-content h1 {
-            font-size: 6rem; /* Large and prominent main title */
+        .hero-content h1 {
+            font-size: 6rem;
             margin: 0.2em 0;
+        }
+        .form-section {
+            padding: 4em 1em;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -67,8 +70,13 @@
         {{ partial "social-icons.html" . }}
     </header>
     <div class="background-wrapper"></div>
-    <div class="centered-content">
+    
+    <div class="hero-content">
         {{ .Content }}
+    </div>
+
+    <div class="form-section">
+        {{ partial "mailerlite-form.html" . }}
     </div>
 
     <script>
