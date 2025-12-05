@@ -1,3 +1,17 @@
-baseURL = 'https://aleainteractive.com/'
+baseURL = 'https://www.aleainteractive.com/'
 languageCode = 'en-us'
 title = 'Alea Interactive'
+
+# Social Links
+[[params.social]]
+  name = "youtube"
+  url = "https://www.youtube.com/@AleaInteractive"
+[[params.social]]
+  name = "instagram"
+  url = "https://www.instagram.com/aleainteractive/"
+[[params.social]]
+  name = "tiktok"
+  url = "https://www.tiktok.com/@aleainteractive"
+[[params.social]]
+  name = "twitter"
+  url = "https://twitter.com/AleaInteractive"
