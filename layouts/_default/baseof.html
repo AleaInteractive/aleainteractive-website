@@ -50,9 +50,11 @@
 </head>
 <body>
     <div class="background-wrapper"></div>
+    {{ if not .Params.hideHeader }}
     <header class="site-header">
         {{ partial "social-icons.html" . }}
     </header>
+    {{ end }}
 
     {{ block "main" . }}{{ end }}
     
