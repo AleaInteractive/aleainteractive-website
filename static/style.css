@@ -6,11 +6,6 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
-	background-image: url('/FietsTogetherTitlePage.webp');
-	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 
 main {

@@ -1,76 +1,46 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>
-    <style>
-        body, html {
-            margin: 0;
-            font-family: sans-serif;
-            color: white;
-        }
-        .site-header {
-            position: fixed;
-            top: 0;
-            right: 0;
-            padding: 1em;
-            z-index: 10;
-        }
-        .social-icons a {
-            display: inline-block;
-            margin-left: 1em;
-        }
-        .social-icons svg {
-            width: 3em;
-            height: 3em;
-            fill: white;
-        }
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-        }
-        .hero-content p {
-            font-size: 2rem;
-            margin: 0;
-        }
-        .hero-content h1 {
-            font-size: 6rem;
-            margin: 0.2em 0;
-        }
-        .form-section {
-            padding: 4em 1em;
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-	<link rel='stylesheet' type='text/css' href='/style.css'>
-</head>
-<body>
-    <header class="site-header">
-        {{ partial "social-icons.html" . }}
-    </header> 
-    
-    <div class="hero-content">
-        {{ .Content }}
-    </div>
+{{ define "styles" }}
+<style>
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+    .hero-content p {
+        font-size: 2rem;
+        margin: 0;
+    }
+    .hero-content h1 {
+        font-size: 6rem;
+        margin: 0.2em 0;
+    }
+    .form-section {
+        padding: 4em 1em;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+{{ end }}
 
-    <div class="form-section">
-        {{ partial "mailerlite-form.html" . }}
-    </div>
+{{ define "main" }}
+<div class="hero-content">
+    {{ .Content }}
+</div>
+<div class="form-section">
+    {{ partial "mailerlite-form.html" . }}
+</div>
+{{ end }}
 
-    <script>
-        window.addEventListener('scroll', function() {
-            const bgWrapper = document.querySelector('.background-wrapper');
-            const scrollPosition = window.scrollY;
-            const blurValue = Math.min(scrollPosition / 100, 10);
-            bgWrapper.style.setProperty('--blur-value', blurValue + 'px');
-        });
-    </script>
-</body>
-</html>
+{{ define "scripts" }}
+<script>
+    window.addEventListener('scroll', function() {
+        const bgWrapper = document.querySelector('.background-wrapper');
+        const scrollPosition = window.scrollY;
+        const blurValue = Math.min(scrollPosition / 100, 10);
+        bgWrapper.style.setProperty('--blur-value', blurValue + 'px');
+    });
+</script>
+{{ end }}
