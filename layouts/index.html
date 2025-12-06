@@ -8,20 +8,23 @@
         height: 100vh;
         text-align: center;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        padding: 0 1em;
+        box-sizing: border-box;
     }
     .hero-content p {
-        font-size: 2.5rem;
+        font-size: clamp(1.2rem, 4vw, 2rem);
         margin: 0;
     }
     .hero-content h1 {
-        font-size: 7.5rem;
+        font-size: clamp(2.5rem, 8vw + 1rem, 7rem);
         margin: 0.2em 0;
     }
     .form-section {
-        padding-top: 10em;
-        padding-bottom: 20em;
+        padding: 20vh 1em;
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
+        min-height: 60vh;
     }
 </style>
 {{ end }}
