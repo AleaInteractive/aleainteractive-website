@@ -1,6 +1,7 @@
 baseURL = 'https://www.aleainteractive.com/'
 languageCode = 'en-us'
 title = 'Alea Interactive'
+theme = 'Ananke'
 
 # Social Links
 [[params.social]]
