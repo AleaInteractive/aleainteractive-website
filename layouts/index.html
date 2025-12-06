@@ -26,21 +26,6 @@
             height: 3em;
             fill: white;
         }
-        .background-wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-image: url('{{ relURL "FietsTogetherTitlePage.webp" }}');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            filter: blur(var(--blur-value, 0px));
-            transform: scale(1.1);
-            transition: filter 0.2s linear;
-        }
         .hero-content {
             display: flex;
             flex-direction: column;
@@ -64,12 +49,12 @@
             justify-content: center;
         }
     </style>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
 </head>
 <body>
     <header class="site-header">
         {{ partial "social-icons.html" . }}
-    </header>
-    <div class="background-wrapper"></div>
+    </header> 
     
     <div class="hero-content">
         {{ .Content }}

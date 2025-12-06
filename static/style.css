@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+    color: white;
+	
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-image: url('/FietsTogetherTitlePage.webp');
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+main {
+	max-width: 800px ;
+	margin: auto ;
+}
+
+img {
+	max-width: 100% ;
+}
+
+header {
+	overflow: hidden;
+}
+
+header h1 {
+	text-align: center ;
+}
+
+footer {
+	text-align: center ;
+	clear: both ;
+}
+
+/* For TAGLIST.HTML */
+.taglist {
+	text-align: center ;
+	clear: both ;
+}
+
+/* For NEXTPREV.HTML */
+#nextprev {
+	/* The container for both the previous and next articles. */
+}
+#prevart {
+	float: left ;
+	text-align: left ;
+}
+#nextart {
+	float: right ;
+	text-align: right ;
+}
+#nextart,#prevart {
+	max-width: 33% ;
+}
