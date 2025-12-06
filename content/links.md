@@ -1,6 +1,6 @@
 ---
 title: "Linktree"
-type: "page"
+type: "links"
 layout: 'links'
 hideHeader: true
 ---

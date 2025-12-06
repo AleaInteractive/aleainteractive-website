@@ -43,10 +43,9 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          # Use the baseURL from hugo.toml, which should be your custom domain
           hugo \
             --minify \
-            --baseURL "https://www.aleainteractive.com/" # Explicitly set for custom domain
+            --baseURL "${{ steps.pages.outputs.base_url }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
