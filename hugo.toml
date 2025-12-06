@@ -5,16 +5,21 @@ title = 'Alea Interactive'
 # Social Links
 [[params.social]]
   name = "youtube"
+  displayName = "YouTube"
   url = "https://www.youtube.com/@AleaInteractive"
 [[params.social]]
   name = "instagram"
+  displayName = "Instagram"
   url = "https://www.instagram.com/aleainteractive/"
 [[params.social]]
   name = "tiktok"
+  displayName = "TikTok"
   url = "https://www.tiktok.com/@aleainteractive"
 [[params.social]]
   name = "twitter"
+  displayName = "Twitter"
   url = "https://twitter.com/AleaInteractive"
 [[params.social]]
   name = "linkedin"
+  displayName = "LinkedIn"
   url = "https://de.linkedin.com/company/alea-interactive"
