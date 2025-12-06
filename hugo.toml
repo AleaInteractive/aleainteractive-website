@@ -16,3 +16,6 @@ theme = 'Ananke'
 [[params.social]]
   name = "twitter"
   url = "https://twitter.com/AleaInteractive"
+[[params.social]]
+  name = "linkedin"
+  url = "https://de.linkedin.com/company/alea-interactive"
