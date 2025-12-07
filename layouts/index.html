@@ -37,14 +37,3 @@
     {{ partial "mailerlite-form.html" . }}
 </div>
 {{ end }}
-
-{{ define "scripts" }}
-<script>
-    window.addEventListener('scroll', function() {
-        const bgWrapper = document.querySelector('.background-wrapper');
-        const scrollPosition = window.scrollY;
-        const blurValue = Math.min(scrollPosition / 100, 10);
-        bgWrapper.style.setProperty('--blur-value', blurValue + 'px');
-    });
-</script>
-{{ end }}
