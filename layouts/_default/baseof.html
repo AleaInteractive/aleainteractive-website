@@ -11,6 +11,22 @@
             font-family: sans-serif;
             color: white;
         }
+        body::before{
+            content: '';
+            z-index: -1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100lvh;
+            width: 100%;
+            background-image: url('/FietsTogetherTitlePage.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            transform: scale(1.1);
+            filter: blur(var(--blur-value, 0px));
+        }
         .site-header {
             position: fixed;
             top: 0;
@@ -42,14 +58,12 @@
             background-repeat: no-repeat;
             background-size: cover;
             filter: blur(var(--blur-value, 0px));
-            transform: scale(1.1);
             transition: filter 0.2s linear;
         }
     </style>
     {{ block "styles" . }}{{ end }}
 </head>
 <body>
-    <div class="background-wrapper"></div>
     {{ if not .Params.hideHeader }}
     <header class="site-header">
         {{ partial "social-icons.html" . }}
@@ -60,12 +74,8 @@
     
     <script>
         window.addEventListener('scroll', function() {
-            const bgWrapper = document.querySelector('.background-wrapper');
-            if (bgWrapper) {
-                const scrollPosition = window.scrollY;
-                const blurValue = Math.min(scrollPosition / 100, 10);
-                bgWrapper.style.setProperty('--blur-value', blurValue + 'px');
-            }
+            const blurValue = Math.min(window.scrollY / 100, 10);
+            document.body.style.setProperty('--blur-value', blurValue + 'px');
         });
     </script>
     {{ block "scripts" . }}{{ end }}
