@@ -9,11 +9,6 @@ body {
 	height: 100vh;
 }
 
-main {
-	max-width: 800px ;
-	margin: auto ;
-}
-
 img {
 	max-width: 100% ;
 }
