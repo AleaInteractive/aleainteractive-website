@@ -1,13 +1,5 @@
 {{ define "styles" }}
 <style>
-    .links-page-container {
-        display: flex;           
-        justify-content: center;
-        align-items: center; 
-        min-height: 100vh;
-        padding: 2em;
-        box-sizing: border-box;
-    }
     .outer-box {
         background-color: rgba(27, 77, 62, 0.8);
         padding: 20px;
@@ -67,33 +59,31 @@
 {{ end }}
 
 {{ define "main" }}
-<main class="links-page-container">
-    <div class="outer-box">
-        <a href="/" class="logo-link">
-            <img src="/Logo_Webseite.svg" style="width: 25%;">
-        </a>
-        <h1>Alea Interactive</h1>
-       
-        <div class="link-buttons">
-            {{- with .Site.Params.social }}
-                {{- range . }}
-                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .name }}">
-                    <div class="inner-box">
-                        <p>{{ .displayName }}</p>
-                        {{- with (index $.Site.Data.icons .name) }}
-                            {{ . | safeHTML }}
-                        {{- end }}
-                    </div>
-                </a>
-                {{- end }}
-            {{- end }}
-            <a href="/" class="website-link">
+<div class="outer-box">
+    <a href="/" class="logo-link">
+        <img src="/Logo_Webseite.svg" style="width: 25%;">
+    </a>
+    <h1>Alea Interactive</h1>
+    
+    <div class="link-buttons">
+        {{- with .Site.Params.social }}
+            {{- range . }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .name }}">
                 <div class="inner-box">
-                    <p>Alea Website</p>
-                    <svg viewBox="0 0 225 192" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M107.186,179.409l-102.797,-55.642l102.797,-120.162l102.797,120.162l-102.797,55.642Zm7.107,-150.676l0,134.396l78.584,-42.536l-78.584,-91.859Zm-14.215,-0l-78.584,91.859l78.584,42.536l0,-134.396Z"/></svg>
+                    <p>{{ .displayName }}</p>
+                    {{- with (index $.Site.Data.icons .name) }}
+                        {{ . | safeHTML }}
+                    {{- end }}
                 </div>
             </a>
-        </div>
+            {{- end }}
+        {{- end }}
+        <a href="/" class="website-link">
+            <div class="inner-box">
+                <p>Alea Website</p>
+                <svg viewBox="0 0 225 192" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M107.186,179.409l-102.797,-55.642l102.797,-120.162l102.797,120.162l-102.797,55.642Zm7.107,-150.676l0,134.396l78.584,-42.536l-78.584,-91.859Zm-14.215,-0l-78.584,91.859l78.584,42.536l0,-134.396Z"/></svg>
+            </div>
+        </a>
     </div>
-</main>
+</div>
 {{ end }}
