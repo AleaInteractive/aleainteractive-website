@@ -1,0 +1,47 @@
+{{ define "styles" }}
+<style>
+    body::before {
+        content: '';
+        margin: 0;
+        background-image: url('/FietsTogether_NeutralBackground.webp');
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+    }
+
+    .orange-box {
+        width: 80%;
+        background-color: rgb(199, 80, 0);
+        border-radius: 10px;
+
+        padding: 1vw;
+
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+            pointer-events: none;
+            color: inherit;
+            text-decoration: none;
+            cursor: default;
+        }
+    }
+</style>
+{{ end }}
+
+{{ define "main" }}
+<body>
+    <div class="wrapper">
+        <div class="orange-box">
+            {{ .Content }}
+        </div>
+    </div>
+</body>
+{{ end }}
