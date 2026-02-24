@@ -26,6 +26,5 @@ https://www.aleainteractive.com
  
 
 Inhaltlich Verantwortliche gem. § 18 Abs. 2 MStV:  
-Bruno Nölte: Kaiser-Joseph-Str. 250, 79098 Freiburg  
-Nico Schmidt: Zollergarten 1, 87740 Buxheim  
-Kontakt s.o.
+Bruno Nölte: Anschrift/Kontakt wie oben  
+Nico Schmidt: Anschrift/Kontakt wie oben  
