@@ -24,7 +24,7 @@
     {{ block "styles" . }}{{ end }}
 </head>
 <body>
-    {{ if not .Params.hideHeader }}
+    {{ if and (not .Params.hideHeader) (ne .Kind "404") }}
         {{ partial "header.html" . }}
     {{ end }}
 
@@ -32,7 +32,7 @@
         {{ block "main" . }}{{ end }}
     </main>
 
-    {{ if not .Params.hideFooter }}
+    {{ if and (not .Params.hideFooter) (ne .Kind "404") }}
         {{ partial "footer.html" . }}
     {{ end }}
     
