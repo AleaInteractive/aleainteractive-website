@@ -1,22 +1,5 @@
-{{ define "styles" }}
-<style>
-    .orange-box {
-        width: 80%;
-        background-color: rgb(199, 80, 0);
-        border-radius: 10px;
-
-        padding: 1vw;
-
-        justify-self: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-</style>
-{{ end }}
-
 {{ define "main" }}
-    <div class="orange-box">
+    <div class="content-box">
         {{ .Content }}
     </div>
 {{ end }}
