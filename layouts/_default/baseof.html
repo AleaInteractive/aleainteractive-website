@@ -42,19 +42,6 @@
             align-items: center;
             justify-content: center;
         }
-        footer {
-            height: 5vh;
-            width: 100%;
-            flex-shrink: 0;
-
-            background-color: rgb(199, 80, 0);
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-        }
     </style>
     {{ block "styles" . }}{{ end }}
 </head>
@@ -70,9 +57,7 @@
     </main>
 
     {{ if not .Params.hideFooter }}
-    <footer>
         {{ partial "footer.html" . }}
-    </footer>
     {{ end }}
     
     <script>

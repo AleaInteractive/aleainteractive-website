@@ -32,8 +32,17 @@ header h1 {
 }
 
 footer {
-	text-align: center ;
-	clear: both ;
+	height: 5vh;
+	width: 100%;
+	flex-shrink: 0;
+
+	background-color: rgb(199, 80, 0);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 /* For TAGLIST.HTML */
