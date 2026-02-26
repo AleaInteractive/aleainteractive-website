@@ -2,6 +2,11 @@ baseURL = 'https://www.aleainteractive.com/'
 languageCode = 'en-us'
 title = 'Alea Interactive'
 
+[params]
+favicon = "/favicon.ico"
+logo = "/Logo_Webseite.svg"
+description = "Alea Interactive is an indie-studio from Kempten, Germany. Discover their current project \"Fiets - Together\", a co-op cycling game for 2-4 player!"
+
 # Social Links
 [[params.social]]
   name = "youtube"
@@ -23,6 +28,3 @@ title = 'Alea Interactive'
   name = "linkedin"
   displayName = "LinkedIn"
   url = "https://de.linkedin.com/company/alea-interactive"
-
-[params]
-favicon = "/favicon.ico"
