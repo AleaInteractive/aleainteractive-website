@@ -11,13 +11,6 @@
 
     <link rel='stylesheet' type='text/css' href='/style.css'>
     <style>
-        .site-header {
-            position: fixed;
-            top: 0;
-            right: 0;
-            padding: 1em;
-            z-index: 10;
-        }
         .social-icons a {
             display: inline-block;
             margin-left: 1em;
@@ -47,9 +40,7 @@
 </head>
 <body>
     {{ if not .Params.hideHeader }}
-    <header class="site-header">
-        {{ partial "social-icons.html" . }}
-    </header>
+        {{ partial "header.html" . }}
     {{ end }}
 
     <main>
