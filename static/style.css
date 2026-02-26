@@ -24,11 +24,11 @@ img {
 }
 
 header {
-	overflow: hidden;
-}
-
-header h1 {
-	text-align: center ;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	z-index: 10;
 }
 
 footer {
