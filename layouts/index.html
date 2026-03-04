@@ -53,6 +53,22 @@
         justify-content: center;
         min-height: 60vh;
     }
+    .link-box {
+        margin-top: 10%;
+        background-color: var(--alea-orange);
+        padding: 20px;
+        border-radius: 8px;
+        width: 70%;
+        max-width: 650px;
+        max-height: 100px;
+        display: flex;  
+        justify-content: space-around;
+        align-items: center; 
+    }
+    .link-box:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
     .video-container{
         display: flex;
         padding-bottom: 3%;
@@ -68,12 +84,28 @@
         max-width: 90%;
         max-height: 90%;
     }
+    svg {
+        width: 50px;
+    }
 </style>
 {{ end }}
 
 {{ define "main" }}
 <div class="hero-content">
     {{ .Content }}
+    
+    {{ range .Site.Params.social }}
+        {{ if eq .name "steam" }}
+            <a class="link-box" href="{{ .url }}">
+                <p>Check it out on Steam!</p>
+                {{- with (index $.Site.Data.icons "steam") }}
+                    {{ . | safeHTML }}
+                {{- end }}
+            </a>
+        {{ end }}
+    {{ end }}
+
+    <h1>↓ ↓ ↓ ↓ ↓</h1>
 </div>
 
 <div class="video-container">
