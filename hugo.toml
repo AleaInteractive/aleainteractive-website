@@ -9,6 +9,10 @@ description = "Alea Interactive is an indie-studio from Kempten, Germany. Discov
 
 # Social Links
 [[params.social]]
+  name = "steam"
+  displayName = "Steam"
+  url = "https://store.steampowered.com/app/4347770/FietsTogether/"
+[[params.social]]
   name = "youtube"
   displayName = "YouTube"
   url = "https://www.youtube.com/@AleaInteractive"
