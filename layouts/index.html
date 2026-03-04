@@ -19,17 +19,25 @@
         transform: scale(1.1);
         filter: blur(var(--blur-value, 0px));
     }
+    main{
+        margin-top: 0;
+    }
     .hero-content {
+        height: 100lvh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
         text-align: center;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
         padding: 0 1em;
         box-sizing: border-box;
     }
+    @media screen and (orientation: portrait){
+        .hero-content {
+            max-height: 50lvh;
+        }
+    }   
     .hero-content p {
         font-size: clamp(1.2rem, 4vw, 2rem);
         margin: 0;
@@ -45,6 +53,21 @@
         justify-content: center;
         min-height: 60vh;
     }
+    .video-container{
+        display: flex;
+        padding-bottom: 3%;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        max-height: 80lvh;
+        background-color: var(--alea-darkgreen);
+        border: 5px solid var(--alea-darkgreen);
+        border-radius: 25px;
+    }
+    video {
+        max-width: 90%;
+        max-height: 85lvh;
+    }
 </style>
 {{ end }}
 
@@ -52,7 +75,12 @@
 <div class="hero-content">
     {{ .Content }}
 </div>
-<div class="form-section">
-    {{ partial "mailerlite-form.html" . }}
+
+<div class="video-container">
+    <h2>Fiets - Together Trailer</h2>
+    <video controls autoplay>
+        <source src="{{ "Trailer.webm" | relURL }}" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
 </div>
 {{ end }}
