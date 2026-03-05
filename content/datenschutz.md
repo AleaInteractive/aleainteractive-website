@@ -16,28 +16,27 @@ Brauner, Maier, Nölte, Schmidt GbR
 Haubenschloßstraße 30
 87435 Kempten
 
-Personenbezogene Daten:  
-Zu den personenbezogenen Daten zählen alle Informationen, die sich auf eine natürliche Person beziehen. Dabei kann es sich zum Beispiel um den Namen, eine Anschrift, ein Geburtsdatum oder eine E-Mail-Adresse handeln. Diese Informationen werden nur gemäß der gesetzlichen Datenschutzbestimmungen auf der Website erhoben und verarbeitet.
 
-Zugriffsdaten:  
-Nutzen Sie diese Website, um sich zu informieren und geben keine Daten an, dann werden nur die Daten verarbeitet, die zur Anzeige der Website auf dem von Ihnen verwendeten Gerät erforderlich sind. Das sind insbesondere:
-IP-Adresse  
-Zeitpunkt der Anfrage  
-Übertragene Datenmenge  
-Quellseite  
-verwendeter Browser  
-Betriebssystem  
-Rechtsgrundlage für die Verarbeitung dieser Daten sind berechtigte Interessen gemäß Art. 6 Abs. 1 UAbs. 1 Buchstabe f DSGVO, um die Darstellung der Website grundsätzlich zu ermöglichen.
+## Hosting
+Unser Hoster erhebt in sog. Logfiles folgende Daten, die Ihr Browser übermittelt:  
+IP-Adresse, die Adresse der vorher besuchten Website (Referer Anfrage-Header), Datum und Uhrzeit der Anfrage, Zeitzonendifferenz zur Greenwich Mean Time, Inhalt der Anforderung, HTTP-Statuscode, übertragene Datenmenge, Website, von der die Anforderung kommt und Informationen zu Browser und Betriebssystem.  
+Das ist erforderlich, um unsere Website anzuzeigen und die Stabilität und Sicherheit zu gewährleisten. Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO.
 
-Darüber hinaus können Sie verschiedene Leistungen auf der Website nutzen, bei der weitere personenbezogene und nicht personenbezogene Daten verarbeitet werden.
+Es erfolgt kein Tracking und wir haben auf diese Daten keinen direkten Zugriff.  
+Wir setzen für die Zurverfügungstellung unserer Website folgenden Hoster ein:
 
-Als betroffene Person haben Sie folgende Rechte:
+GitHub Inc.  
+88 Colin P Kelly Jr St  
+San Francisco, CA 94107  
+United States
 
-die verarbeitet werden (Art. 15 DSGVO)
-Recht auf Berichtigung der Sie betreffenden Daten, wenn diese unrichtig oder unvollständig gespeichert werden (Art. 16 DSGVO)  
-Recht auf Löschung (Art. 17 DSGVO)  
-Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen (Art. 18 DSGVO)  
-Recht auf Datenübertragbarkeit (Art. 20 DSGVO)  
-Widerspruchsrecht gegen die Verarbeitung Sie betreffender personenbezogener Daten (Art. 21 DSGVO)  
-Recht nicht einer ausschließlich auf einer automatisierten Verarbeitung beruhenden Entscheidung unterworfen zu werden, die Ihnen gegenüber rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt (Art. 22 DSGVO)  
-Recht, sich bei einem vermuteten Verstoß gegen das Datenschutzrecht bei der zuständigen Aufsichtsbehörde zu beschweren (Art. 77 DSGVO)
+Dieser ist Empfänger Ihrer personenbezogenen Daten. Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO, selbst keinen Server in unseren Räumlichkeiten vorhalten zu müssen. Serverstandort ist USA.  
+Weitere Informationen zu Widerspruchs- und Beseitigungsmöglichkeiten gegenüber GitHub finden Sie unter: https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages
+
+Sie haben das Recht der Verarbeitung zu widersprechen. Ob der Widerspruch erfolgreich ist, ist im Rahmen einer Interessenabwägung zu ermitteln.
+
+Die Daten werden gelöscht, sobald der Zweck der Verarbeitung entfällt.
+
+Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Die Funktionsfähigkeit der Website ist ohne die Verarbeitung nicht gewährleistet.
+
+GitHub hat Compliance-Maßnahmen für internationale Datenübermittlungen umgesetzt. Diese gelten für alle weltweiten Aktivitäten, bei denen GitHub personenbezogene Daten von natürlichen Personen in der EU verarbeitet. Diese Maßnahmen basieren auf den EU-Standardvertragsklauseln (SCCs). Weitere Informationen finden Sie unter: https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1–the-standard-contractual-clauses-processors
