@@ -35,7 +35,7 @@
     }
     @media screen and (orientation: portrait){
         .hero-content {
-            max-height: 50lvh;
+            max-height: 80lvh;
         }
     }   
     .hero-content p {
@@ -81,6 +81,7 @@
         border-radius: 25px;
     }
     .content-box {
+        padding: 1em;
         width: 80vw;
         border-radius: 25px;
         margin: 5em;
@@ -93,6 +94,15 @@
     }
     svg {
         width: 50px;
+    }
+    img {
+        width: 30%; 
+        margin: 1em;
+    }
+    @media screen and (orientation: portrait){
+        img {
+            width: 80%;
+        }
     }
 </style>
 {{ end }}
@@ -124,9 +134,9 @@
 </div>
 
 <div class="content-box">
-    <h2>Wir wurden gefördert!</h2>
-    <p>Wir freuen uns, dass wir vom Bayerischen Staatsministerium und vom FilmFernsehFond Bayern für die Erstellung unseres Prototypens gefördert wurden.</p>
-    <img style="width: 30%; margin: 1em" src="/FFF-Logo.svg" alt="Logo des FFF-Bayern">
-    <img style="width: 30%; margin: 1em" src="/Digitalministerium-Logo.png" alt="Logo des Bayerischen Digitalministeriums">
+    <h2>We've been founded!</h2>
+    <p>We are pleased to announce that the Bavarian State Ministry for Digital Affairs and the FFF Bavaria have funded the creation of our prototype.</p>
+    <img src="/FFF-Logo.svg" alt="Logo des FFF-Bayern">
+    <img src="/Digitalministerium-Logo.png" alt="Logo des Bayerischen Digitalministeriums">
 </div>
 {{ end }}
