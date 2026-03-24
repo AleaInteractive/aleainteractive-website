@@ -20,7 +20,7 @@ Florian Brauner, Jonas Maier, Bruno Nölte, Nico Schmidt
 
 Kontakt:  
 E-Mail: contact@aleainteractive.com  
-Telefon: +49 177 8784405  
+Telefon: +49 1525 4630757  
 https://www.aleainteractive.com
 
  
